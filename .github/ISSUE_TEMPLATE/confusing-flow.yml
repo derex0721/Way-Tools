@@ -1,0 +1,62 @@
+name: UX / Confusing Flow
+description: Tell us where a screen, label or next step was unclear.
+title: "[UX] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This Issue will be public. English or 繁體中文 is welcome.**
+        Do not submit passwords, API keys, secrets, private documents, sensitive Context, payment information or confidential data. / 請勿提交密碼、API keys、秘密、私人文件、敏感脈絡、付款資訊或機密資料。
+        Remove passwords, API keys, credentials, private documents, sensitive Context, private URLs and identifying details.
+        Share only non-sensitive examples and reviewed screenshots. Do not attach the private beta package or a complete workspace.
+  - type: textarea
+    id: location
+    attributes:
+      label: Where did you get confused? / 在哪裡困惑
+      description: Name the screen and task, without private content.
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Web or Extension? / 使用方式
+      options:
+        - Web
+        - Chrome Extension — Quick Way
+        - Chrome Extension — Full workspace
+        - Not sure / 不確定
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect? / 原本預期
+    validations:
+      required: true
+  - type: textarea
+    id: attempted
+    attributes:
+      label: What did you try? / 試過什麼
+      description: Tell us whether you found a way to continue.
+    validations:
+      required: true
+  - type: textarea
+    id: wording
+    attributes:
+      label: What wording or control was unclear? / 哪段文字或控制項不清楚
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot (optional) / 截圖（選填）
+      description: Hide private tabs, names, URLs and content before attaching.
+    validations:
+      required: false
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Before submitting / 送出前
+      options:
+        - label: I reviewed this report and attachments and removed sensitive information. / 已檢查並移除敏感資訊。
+          required: true

@@ -1,0 +1,3 @@
+# Keep the three prepared forms available for feedback.
+# This controls the template chooser, not the repository's Issues setting.
+blank_issues_enabled: false
