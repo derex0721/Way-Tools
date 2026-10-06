@@ -2,10 +2,11 @@
 
 <p align="center"><img src="assets/branding/way-tools-icon.svg" width="64" alt="Way Tools 圖示"></p>
 <h1 align="center">WAY TOOLS</h1>
-<p align="center"><strong>Context → Chat → Tool → Action</strong></p>
-<p align="center">把手邊資料帶進同一個工作空間。<br>取得有用的結果，再把成功的方法留給下一次使用。</p>
+<p align="center"><strong>Less AI. Better System.</strong></p>
+<p align="center"><strong>把一次成功，變成下一次幾乎免費的能力。</strong></p>
+<p align="center">需要 AI 時才用 AI，把成功且驗證過的方法留下來，讓熟悉任務逐步用更少推理、更少 Token，甚至更多本機能力完成。</p>
 <p align="center"><strong>Friend Beta V0</strong> · 私人受邀測試 · 專有軟體</p>
-<p align="center"><a href="docs/getting-started.md#繁體中文快速路線">從這裡開始</a> · <a href="docs/installation.md">安裝</a> · <a href="#主要體驗">探索</a> · <a href="docs/feedback.md">回饋</a> · <a href="https://waytools.pages.dev/">官方網站</a></p>
+<p align="center"><a href="docs/getting-started.md#繁體中文快速路線">從這裡開始</a> · <a href="docs/installation.md">安裝</a> · <a href="#目前可用">目前可用</a> · <a href="#產品方向--vision">產品方向</a> · <a href="docs/feedback.md">回饋</a> · <a href="https://waytools.pages.dev/">官方網站</a></p>
 
 ![Way Tools 產品識別圖，並非產品截圖](assets/hero/way-tools-hero.svg)
 
@@ -19,12 +20,29 @@ Chrome 擴充功能從 **Quick Way** 開始，讓你在瀏覽網頁時快速帶�
 
 ## 為什麼使用 Way Tools？
 
+多數 AI 產品會把每個任務都變成下一次推理。Way Tools 的方向不同：需要時使用 AI，保留成功且驗證過的方法，並把重複出現的熟悉工作逐步轉成可重用的本機或確定性能力。
+
 - **先從資料開始。** 明確附加頁面資訊或選文，也可以貼上簡單範例。
 - **在聊天與工具之間接續操作。** 用指令或工具按鈕處理，再把結果傳回 Chat。
 - **把有用的內容放在一起。** My Way 保存本機筆記、Recipe 結果與 Skills。
 - **重複成功的方法。** 跑完 Clean & Save Links，把已驗證的方法另存為 Skill，下次提供新輸入再使用。
 
-## 怎麼使用
+## 目前可用
+
+Friend Beta V0 目前刻意維持有限、以本機為主的範圍。
+
+| 項目 | 狀態 |
+| --- | --- |
+| 產品 | Friend Beta V0；應用程式版本 0.1.15 |
+| 平台 | Web 工作區、私下提供的桌面 Chrome 擴充功能 |
+| 聊天 | 已支援本機指令；未啟用遠端 AI |
+| Recipes／Skills | 一個內建 Recipe，可保存成功方法並用新輸入重跑 |
+| 資料 | 本機工作區；沒有帳號、雲端或跨平台同步 |
+| 下一版本 | V0.1.16 尚未開始 |
+
+下方 **產品方向 / Vision** 的內容是長期產品方向，不代表目前 Friend Beta 已經提供這些功能。
+
+## 現在怎麼使用
 
 | 步驟 | 你要做什麼 | 範例 |
 | --- | --- | --- |
@@ -47,6 +65,53 @@ Chrome 擴充功能從 **Quick Way** 開始，讓你在瀏覽網頁時快速帶�
 | **My Way** | 找筆記、已釘選／最近使用工具、Recipe 結果與 Skills | [Recipes 與 Skills](docs/recipes-and-skills.md) |
 | **Recipes** | 執行內建 Clean & Save Links 程序 | [Recipes 與 Skills](docs/recipes-and-skills.md) |
 | **Skills** | 保存成功 Recipe 的方法，下次用新輸入重跑 | [Recipes 與 Skills](docs/recipes-and-skills.md) |
+
+## 產品方向 / Vision
+
+### 產品哲學
+
+Way Tools 的目標不是讓 AI 呼叫越多越好。長期系統應先把正確資料捕捉進來，先保留結構，再決定是否需要生成；而且在再次呼叫 AI 前，先回想系統已經知道什麼。也就是：**先 Capture，再決定需要多少智慧；先 Recall，再考慮 AI；Structured IR First；沒有變化的 Context 不重送。** AI 應該只補本機邏輯與已驗證知識無法可靠填補的語意缺口。
+
+成功的 AI 工作，應該逐步畢業成 Local / Deterministic Capability。Skills、Recipes 與各種能力也應越來越「隱性」：面對熟悉任務，使用者不需要先想起某個 Skill 名稱再手動打開。互動應該是 **Intent-first，而不是 Tool-first**；工具分類與標籤只是輔助 UI，只有在真的有幫助時才出現。
+
+這個方向可以濃縮成一句：**Less AI. Better System.**
+
+### 長期循環
+
+**Capture → Local Process → Context → Recall → Route → Act → Verify → Learn**
+
+驗證過的結果，接著可以進入另一個正向循環：
+
+**Capability Memory → Reuse → Cost Down**
+
+**Capability Memory（能力記憶）**不是只記住內容，而是記住「某一類任務曾經如何成功完成」：包含可重用步驟、已驗證方法，以及能穩定執行的確定性能力。這讓下一次遇到相似任務時，可以少一點推理、少一點 Token，最後甚至不必再呼叫 AI。
+
+### 正向飛輪
+
+**第一次使用 → AI / 推理 → 成功且驗證 → 記住方法 → 重複使用 → Skill / Recipe / Capability → 成熟使用 → Local / Deterministic 執行 → 更快 + 更便宜 + 更少依賴 AI**
+
+理想結果不是「更多 AI calls」，而是每一次成功使用，都讓下一次類似工作更便宜、更快，也更少依賴 AI。
+
+### Recall before AI
+
+未來的 Way Tools Router 在呼叫 AI 前，應先檢查已經存在的能力與記憶，包括：
+
+- 既有 Skills
+- Recipes
+- Local Capabilities
+- Capability Memory
+- 過去已驗證的工作流程
+- 與當前任務相關的使用者／Context 記憶
+
+概念路徑：
+
+**Intent → Recall → 已知能力？**
+
+- **完全或高信心匹配：** 直接在本機重用。
+- **部分匹配：** 先重用已知部分，只補真正缺少的語意。
+- **沒有可靠匹配：** 再使用 AI。
+
+這種路由模式、自動 Skill Recall、隱性 Skills、Capability Memory、AI Dependency 降低，以及逐步轉成 Local / Deterministic 的機制，都屬於 **產品方向 / Vision**，不是 Friend Beta V0 已上線功能。
 
 ## 產品畫面
 
@@ -107,16 +172,7 @@ GitHub Issues 是公開的。先移除秘密與私人內容，不要附完整工
 
 ## 目前狀態
 
-| 項目 | 狀態 |
-| --- | --- |
-| 產品 | Friend Beta V0；應用程式版本 0.1.15 |
-| 平台 | Web 工作區、私下提供的桌面 Chrome 擴充功能 |
-| 聊天 | 已支援本機指令；未啟用遠端 AI |
-| Recipes／Skills | 一個內建 Recipe，可保存成功方法並用新輸入重跑 |
-| 資料 | 本機工作區；沒有帳號、雲端或跨平台同步 |
-| 下一版本 | V0.1.16 尚未開始 |
-
-UX 與相容性限制請看 [已知問題](docs/known-issues.md)。
+請以上方 **目前可用** 為準；UX 與相容性限制請看 [已知問題](docs/known-issues.md)。
 
 ## 原始碼提供範圍
 

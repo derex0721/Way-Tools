@@ -2,10 +2,11 @@
 
 <p align="center"><img src="assets/branding/way-tools-icon.svg" width="64" alt="Way Tools icon"></p>
 <h1 align="center">WAY TOOLS</h1>
-<p align="center"><strong>Context → Chat → Tool → Action</strong></p>
-<p align="center">Bring what you're working with into one workspace.<br>Turn it into useful results—and methods you can use again.</p>
+<p align="center"><strong>Less AI. Better System.</strong></p>
+<p align="center"><strong>Turn one successful task into an almost-free capability for the next time.</strong></p>
+<p align="center">Use AI where it helps. Preserve what works. Reuse verified methods with less reasoning, fewer tokens, and increasingly local execution.</p>
 <p align="center"><strong>Friend Beta V0</strong> · Private, invited testing · Proprietary software</p>
-<p align="center"><a href="docs/getting-started.md">Start here</a> · <a href="docs/installation.md">Install</a> · <a href="#core-experiences">Explore</a> · <a href="docs/feedback.md">Feedback</a> · <a href="https://waytools.pages.dev/">Website</a></p>
+<p align="center"><a href="docs/getting-started.md">Start here</a> · <a href="docs/installation.md">Install</a> · <a href="#available-today">Available today</a> · <a href="#product-direction--vision">Vision</a> · <a href="docs/feedback.md">Feedback</a> · <a href="https://waytools.pages.dev/">Website</a></p>
 
 ![Way Tools product identity graphic; this is not a product screenshot](assets/hero/way-tools-hero.svg)
 
@@ -19,12 +20,29 @@ The Chrome extension starts with **Quick Way**, a compact entry point beside you
 
 ## Why Way Tools?
 
+Most AI products make every task another inference. Way Tools is heading in a different direction: use AI when needed, preserve successful verified methods, and progressively turn familiar work into reusable local or deterministic capability.
+
 - **Start with the material.** Explicitly attach a page reference or selected text, or paste a small example.
 - **Move between Chat and Tools.** Use a supported command or a tool's controls, then bring a result back to Chat.
 - **Keep useful work together.** My Way holds notes, saved Recipe results and Skills in your local workspace.
 - **Repeat a successful method.** Run Clean & Save Links, save the verified procedure as a Skill, and use it with fresh input.
 
-## How it works
+## Available today
+
+Friend Beta V0 is intentionally limited and local-first.
+
+| Area | Current state |
+| --- | --- |
+| Product | Friend Beta V0; application version 0.1.15 |
+| Platforms | Web workspace and privately distributed desktop Chrome extension |
+| Chat | Supported local commands; remote AI not enabled |
+| Recipes / Skills | One built-in Recipe; successful method capture and reuse with fresh input |
+| Data | Local workspace; no accounts, cloud sync or cross-platform sync |
+| Next version | V0.1.16 has not started |
+
+The concepts in **Product Direction / Vision** below are not claims about current production functionality.
+
+## How it works today
 
 | Step | What you do | Example |
 | --- | --- | --- |
@@ -47,6 +65,53 @@ Chat and Tools are alternative starting points. You do not need to pass through 
 | **My Way** | Find notes, pinned/recent tools, Recipe results and saved Skills | [Recipes & Skills](docs/recipes-and-skills.md) |
 | **Recipes** | Run the built-in Clean & Save Links procedure | [Recipes & Skills](docs/recipes-and-skills.md) |
 | **Skills** | Save a successful Recipe's method and run it again with new input | [Recipes & Skills](docs/recipes-and-skills.md) |
+
+## Product Direction / Vision
+
+### Product philosophy
+
+Way Tools is not designed to maximize AI calls. The long-term system starts by capturing the right material, keeps structure before generation, and recalls what is already known before asking AI again. In practice, that means **capture first, intelligence later**; **recall before AI**; **Structured IR First**; and **never resend unchanged context**. AI should be reserved for semantic gaps that local logic or verified knowledge cannot reliably close.
+
+Successful AI-assisted work should progressively graduate into Local / Deterministic Capability. Skills, Recipes and capabilities should also become increasingly implicit: for familiar tasks, users should not have to remember which Skill to open. The interaction should be **intent-first, not tool-first**; tool categories and labels are secondary UI that should appear only when useful.
+
+That direction is summarized by **Less AI. Better System.**
+
+### The long-term loop
+
+**Capture → Local Process → Context → Recall → Route → Act → Verify → Learn**
+
+Verified outcomes can then feed a second loop:
+
+**Capability Memory → Reuse → Cost Down**
+
+**Capability Memory** means memory of how a class of tasks was successfully completed—including reusable steps, verified methods and deterministic capabilities—so the next similar task can require less reasoning, fewer tokens, or eventually no AI call at all.
+
+### The positive flywheel
+
+**First use → AI / reasoning → Successful + verified → remember method → Repeated use → Skill / Recipe / Capability → Mature use → Local / Deterministic execution → faster + cheaper + less AI-dependent**
+
+The ideal outcome is not more AI calls. Every successful use should make the next similar use cheaper, faster and less AI-dependent.
+
+### Recall before AI
+
+A future Way Tools router should check what already exists before calling AI:
+
+- existing Skills
+- Recipes
+- Local Capabilities
+- Capability Memory
+- previous verified workflows
+- relevant user or context memory
+
+Conceptually:
+
+**Intent → Recall → Known capability?**
+
+- **Exact / high-confidence match:** reuse locally.
+- **Partial match:** reuse what is known and fill only the semantic gap.
+- **No reliable match:** use AI.
+
+This routing model, automatic Skill recall, implicit Skills, Capability Memory, AI dependency reduction and progressive local/deterministic graduation are **Product Direction / Vision**, not features claimed as shipped in Friend Beta V0.
 
 ## Product views
 
@@ -105,16 +170,7 @@ GitHub Issues are public. Remove private content and secrets; never attach a com
 
 ## Current status
 
-| Area | Current state |
-| --- | --- |
-| Product | Friend Beta V0; application version 0.1.15 |
-| Platforms | Web workspace and privately distributed desktop Chrome extension |
-| Chat | Supported local commands; remote AI not enabled |
-| Recipes / Skills | One built-in Recipe; successful method capture and reuse with fresh input |
-| Data | Local workspace; no accounts, cloud sync or cross-platform sync |
-| Next version | V0.1.16 has not started |
-
-See [Known Issues](docs/known-issues.md) for current UX and compatibility limits.
+See **Available today** above and [Known Issues](docs/known-issues.md) for current UX and compatibility limits.
 
 ## Source Availability
 
